@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "ignore": ["*.v[0-9].*"],
+  "watch": ["../myordbok/*"]
+}

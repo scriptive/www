@@ -1,0 +1,16 @@
+{
+	"port": "80",
+	"app": "app",
+	"share": "share",
+	"main": "index.js",
+	"virtual": {
+		"../myordbok":["0.0.0.0","*.*","*"]
+	},
+	"virtual_tmp": {
+		"../testEvh":["test.local"],
+		"../myordbok":["myordbok.*","myordbok.*.*"],
+		"../zaideih":["zaideih.*","zaideih.*.*"],
+		"./app/default":["127.0.0.1","*"],
+		"any":["0.0.0.0","*.*","*"]
+	}
+}

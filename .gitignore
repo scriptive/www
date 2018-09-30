@@ -1,3 +1,11 @@
+*.v[0-9]*.*
+/app/*/static/**/*.js
+/app/*/static/**/*.css
+/app/*/static/**/*.map
+#app/*
+#!app/default
+
+
 # Logs
 logs
 *.log
