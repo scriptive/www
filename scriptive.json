@@ -4,7 +4,7 @@
 	"share": "share",
 	"main": "index.js",
 	"virtual": {
-		"../myordbok":["0.0.0.0","*.*","*"]
+		"../zaideih":["0.0.0.0","*.*","*"]
 	},
 	"virtual_tmp": {
 		"../testEvh":["test.local"],

@@ -9,7 +9,7 @@
 
 
 
-var {application} = require.main.exports();
+// var {application} = require.main.exports();
 
 // var webpack = require('webpack');
 // var webpackConfig = require(process.env.WEBPACK_CONFIG ? process.env.WEBPACK_CONFIG : './webpack.config');
