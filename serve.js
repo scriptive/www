@@ -1,14 +1,9 @@
-const ask=(Id)=>require(Id);
-const root=__dirname;
-const evh=()=>ask('@scriptive/evh');
-module.exports = {evh,ask,root};
+const ask=(Id)=>require(Id),
+      evh=()=>ask('@scriptive/evh');
+module.exports = {evh,ask};
 const {scriptive} = evh();
 
-// const webpack = require('webpack');
-// const webpackDevMiddleware = require("webpack-dev-middleware");
-// const webpackHotMiddleware =  require("webpack-hot-middleware");
-
-var server = new scriptive('');
+var server = new scriptive();
 // OPTIMIZE: .port(3000) is optional, default port number based on `.env`
 // server.port();
 

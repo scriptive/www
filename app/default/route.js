@@ -1,4 +1,10 @@
-var app= require('./');
+/*
+var {nav} = require('./');
+nav()
+var app = require('./');
+app.nav()
+*/
+var app = require('./');
 
 app.nav('navPage')
   .route({url: '/',route: 'home', text: 'Home'})

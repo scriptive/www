@@ -1,24 +1,23 @@
-// const {path,rootSetting} = require('@scriptive/evh');
-// const {path,rootSetting} = require.main.exports();
-// const {score} = require('./score');
-//
-// module.exports = function(app){
-//   app.use('*',require(path.join(score.dir.routes, 'home')));
-// };
-// module.exports.score = score;
+const root = require.main.exports,
+      {essence} = root.evh();
+module.exports = {root};
 
+/*
+var app = module.exports = {};
+app.score = score;
+app.middleware = 'middleware.js';
+*/
 
-
-// var {application} = require.main.exports();
+// var app = module.exports = function(){};
+// app.score = score;
 
 // var webpack = require('webpack');
-// var webpackConfig = require(process.env.WEBPACK_CONFIG ? process.env.WEBPACK_CONFIG : './webpack.config');
+// process.env.WEBPACK_CONFIG ? process.env.WEBPACK_CONFIG :
+// var webpackConfig = require('./webpack.middleware');
 // var compiler = webpack(webpackConfig);
-//
-// application.use(require("webpack-dev-middleware")(compiler, {
+// essence.use(require('webpack-dev-middleware')(compiler, {
 //   logLevel: 'warn', publicPath: webpackConfig.output.publicPath
 // }));
-//
-// application.use(require("webpack-hot-middleware")(compiler, {
+// essence.use(require('webpack-hot-middleware')(compiler, {
 //   log: console.log, path: '/__webpack_hmr', heartbeat: 10 * 1000
 // }));

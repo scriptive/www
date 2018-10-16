@@ -4,9 +4,9 @@
 	"share": "share",
 	"main": "index.js",
 	"virtual": {
-		"../zaideih":["0.0.0.0","*.*","*"]
+		"../myordbok":["0.0.0.0","*.*","*"]
 	},
-	"virtual_tmp": {
+	"available": {
 		"../testEvh":["test.local"],
 		"../myordbok":["myordbok.*","myordbok.*.*"],
 		"../zaideih":["zaideih.*","zaideih.*.*"],
