@@ -16,13 +16,7 @@
 ## .env
 
 ```
-PORT=80
-appDirectories=./app
-appHttp=http
 
-myordbok=myordbok.*,myordbok.*.*
-zaideih=zaideih.*,zaideih.*.*,lethil.local
-dist=127.0.0.1,*
 
 
 ```

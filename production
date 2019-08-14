@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-'use strict';
-// TODO: ???
-console.log('under-construction');
-// pm2 start serve.js --watch
