@@ -10,19 +10,29 @@ mkcert zaideih.local "*.zaideih.local" myordbok.local localhost 127.0.0.1 ::1
 
 ## production
 
-...see [Port bind](host.md#port-bind)
+... see [Port bind](host.md#port-bind)
+
+### certbot
 
 ```shell
 sudo apt-get install certbot
+```
 
+### new Certificate
+
+```shell
 sudo certbot certonly --standalone
 sudo certbot certonly --webroot
+```
 
+### Certificate directory
+
+```shell
 sudo chown $(whoami) /etc/letsencrypt/live/ -R
 sudo chown $(whoami) /etc/letsencrypt/archive/ -R
 ```
 
-## ssl renew
+### Certificate renew
 
 ```shell
 # certbot renew does not work when you manually issue certificates

@@ -1,46 +1,66 @@
 # Enviroment
 
-`.env`
+Note: In `.env` file each configuration should be inline.
 
 ## port
 
-80 is default
+> port=80
 
 ```shell
-port=80
+80
 ```
 
 ## virtual
 
+> virtual={}
+
 ... listen all requests
 
-```shell
-virtual={"../example-directory":"*"}
+```json
+{
+  "../example-directory":"*"
+}
 ```
 
 ... listen only matches
 
-```shell
-virtual={"../one-directory":"one.com","../two-directory":"two.*"}
-virtual={"../one-directory":"one.com","../example-directory":"example.com","./none-directory":"*.*"}
+```json
+{
+  "../one-directory":"one.com",
+  "../example-directory":"example.com",
+  "./none-directory":"*.*"
+}
 ```
 
 ... listen matches with default
 
-```shell
-virtual={"../one-directory":"one.*","../two-directory":"*.two.com","../example-directory":"*"}
-virtual={"../one-directory":"one.com,one.org","../two-directory":"*.two.com","../example-directory":"example.com,*"}
-
+```json
+{
+  "../one-directory":"one.*",
+  "../two-directory":"*.two.com",
+  "../example-directory":"*"
+}
 ```
 
-## ssl-certificate, [letsencrypt](ssl.md#production)
+## ssl-certificate
 
-```shell
-certificate={"key":"/etc/letsencrypt/live/path-to/privkey.pem","cert":"/etc/letsencrypt/live/path-to/cert.pem","ca":"/etc/letsencrypt/live/path-to/fullchain.pem"}
+> certificate={}
+
+... [letsencrypt](ssl.md#production)
+
+```json
+{
+  "key":"/etc/letsencrypt/live/path-to/privkey.pem",
+  "cert":"/etc/letsencrypt/live/path-to/cert.pem",
+  "ca":"/etc/letsencrypt/live/path-to/fullchain.pem"
+}
 ```
 
-... local, [mkcert](ssl.md#production)
+... local [mkcert](ssl.md#production)
 
-```shell
-certificate={"key":"secure/server-key.pem","cert":"secure/server-cert.pem"}
+```json
+{
+  "key":"secure/server-key.pem",
+  "cert":"secure/server-cert.pem"
+}
 ```
