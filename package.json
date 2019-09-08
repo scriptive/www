@@ -1,13 +1,14 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "description": "...a framework based Node.js server using Express with vhost with mysql or mongodb!",
-  "main": "index.js",
+  "description": "...a framework based Node.js server using Express.js with vhost and mysql or mongodb!",
+  "main": "serve.js",
   "scripts": {
-    "start": "node index",
-    "test": "node index",
-    "nodemon": "nodemon index",
-    "forever": "forever start forever.json"
+    "start": "node serve",
+    "test": "node serve",
+    "nodemon": "nodemon serve",
+    "forever": "forever start forever.json",
+    "pm2": "pm2 start pm2.json"
   },
   "repository": {
     "type": "git",

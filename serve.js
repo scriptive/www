@@ -2,7 +2,6 @@ const scriptive = require("@scriptive/evh");
 
 module.exports = scriptive;
 scriptive.server();
-
 // const scriptive = require("@scriptive/evh");
 // module.exports = scriptive;
 // scriptive.server();
