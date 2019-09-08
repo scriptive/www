@@ -12,7 +12,9 @@
 127.0.1.1   zaideih.lethil.local
 ```
 
-## Port kill
+## Port
+
+... port kill
 
 ```console
 sudo netstat -lpn | grep :8080

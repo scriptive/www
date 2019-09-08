@@ -60,22 +60,16 @@ sudo apt upgrade
 live
 /var/www/media/fonts/
 
+<!-- # New service account HMAC key
+# 561736444893-compute@developer.gserviceaccount.com
+# Access key:GOOG1ECNG47GWWVTKANUOJHTD56NCFYBGBKDKOVWDDVC2ARFFDUAP5546GYBY
+# Secret: COg8EaMqI9d75NUZ/dXC14xqMSuNoAaybI1do61o -->
 
-Syncing
+/var/www/scriptive
+/var/www/storage
+/var/www/media
+/var/www/tmp
+/var/www/zaideih
+/var/www/myordbok
 
-    $ sudo rsync -avP /var/www/backup/wordpress/ /var/www/tearsgospel
-    $ sudo rsync -avP /var/www/backup/wordpress/ /var/www/banzaal
-    $ sudo rsync -avP /var/www/backup/wordpress/ /var/www/tungzangglobal
-
-Permission, once you executed you should test it!
-
-    $ sudo chown -R www-data:www-data /var/www/tearsgospel
-    $ sudo chown -R www-data:www-data /var/www/banzaal
-    $ sudo chown -R www-data:www-data /var/www/tungzangglobal
-
-
-
-
-	rsync -avP /var/www/media/fonts/ /var/www/storage/media/fonts
-
-	tar -zcvf fonts.tar.gz /var/www/storage/media/fonts/
+/var/www/media

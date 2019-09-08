@@ -1,17 +1,46 @@
-# ; NOTE: port, 80 is default
+# Enviroment
+
+`.env`
+
+## port
+
+80 is default
+
+```shell
 port=80
+```
 
-# ; NOTE: listen all requests
+## virtual
+
+... listen all requests
+
+```shell
 virtual={"../example-directory":"*"}
+```
 
-# ; NOTE: listen only matches
+... listen only matches
+
+```shell
 virtual={"../one-directory":"one.com","../two-directory":"two.*"}
 virtual={"../one-directory":"one.com","../example-directory":"example.com","./none-directory":"*.*"}
+```
 
-# ; NOTE: listen matches with default
+... listen matches with default
+
+```shell
 virtual={"../one-directory":"one.*","../two-directory":"*.two.com","../example-directory":"*"}
 virtual={"../one-directory":"one.com,one.org","../two-directory":"*.two.com","../example-directory":"example.com,*"}
 
-# ; NOTE: ssl-certificate
+```
+
+## ssl-certificate, [letsencrypt](ssl.md#production)
+
+```shell
 certificate={"key":"/etc/letsencrypt/live/path-to/privkey.pem","cert":"/etc/letsencrypt/live/path-to/cert.pem","ca":"/etc/letsencrypt/live/path-to/fullchain.pem"}
-# certificate={"key":"secure/server-key.pem","cert":"secure/server-cert.pem"}
+```
+
+... local, [mkcert](ssl.md#production)
+
+```shell
+certificate={"key":"secure/server-key.pem","cert":"secure/server-cert.pem"}
+```

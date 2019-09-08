@@ -1,4 +1,4 @@
-# reference
+# MySQL
 
 ...start/stop
 
@@ -7,7 +7,7 @@ sudo systemctl restart mysql.service
 sudo systemctl restart mariadb.service
 ```
 
-... installation
+## Installation
 
 ```shell
 sudo apt update
@@ -47,7 +47,7 @@ SHOW DATABASES;
 SELECT user,host FROM mysql.user;
 
 # create
-CREATE USER 'user' IDENTIFIED BY '<password>';
+CREATE USER 'user' IDENTIFIED BY 'password';
 
 # grant
 GRANT ALL PRIVILEGES ON *.* to user@'<ip>.%';
@@ -64,16 +64,16 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 #bind-address            = 0.0.0.0
 ```
 
-...tmp
+...tmp(remote2SQL)
 
 ```sql
-CREATE USER 'root' IDENTIFIED BY 'remote2SQL';
+CREATE USER 'root' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* to root@'%';
-GRANT USAGE ON *.* TO 'root'@'%' IDENTIFIED BY 'remote2SQL';
+GRANT USAGE ON *.* TO 'user'@'%' IDENTIFIED BY 'password';
 
-GRANT ALL PRIVILEGES ON *.* TO 'USERNAME'@'IP' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'IP' IDENTIFIED BY 'password';
 FLUSH PRIVILIGES;
 
-UPDATE mysql.user SET authentication_string = PASSWORD('remote2SQL') WHERE User = 'root' AND Host = '%';
+UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root' AND Host = '%';
 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'my-new-password' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
