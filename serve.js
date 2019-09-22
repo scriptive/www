@@ -1,10 +1,11 @@
 const scriptive = require("@scriptive/evh");
 
 module.exports = scriptive;
-scriptive.server();
+scriptive.serve();
+// scriptive.test();
 // const scriptive = require("@scriptive/evh");
 // module.exports = scriptive;
-// scriptive.server();
+// scriptive.serve();
 
 /*
 const root = require('@scriptive/evh');

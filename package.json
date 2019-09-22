@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "...a framework based Node.js server using Express.js with vhost and mysql or mongodb!",
   "main": "serve.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "test": "node serve",
     "nodemon": "nodemon serve",
     "forever": "forever start forever.json",
-    "pm2": "pm2 start pm2.json"
+    "pm2": "pm2 start pm2.json",
+    "myordbok": "node run myordbok",
+    "testdb": "node test/serve_mongodb"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,7 @@
   "homepage": "https://github.com/scriptive/evh#readme",
   "dependencies": {
     "@scriptive/evh": "file:../evh"
+  },
+  "devDependencies": {
   }
 }

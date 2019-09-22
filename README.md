@@ -71,12 +71,20 @@ $ rsync -avP media storage/media/
         └── ?
     └── media
         └── fonts
+            └── restrict.json
+            └── primary.json
+            └── secondary.json
+            └── external.json
         └── grammar
+            └── partsofspeech.json
+        └── store
         └── etc
     └── ?
 └── media (copy of storage/media/)
     └── fonts
     └── grammar
+    └── store
+        └── track.json
     └── etc
 └── tmp
     └── ?
