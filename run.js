@@ -5,4 +5,5 @@
 // npm run myordbok
 const scriptive = require("@scriptive/evh");
 module.exports = scriptive;
-scriptive.run(process.argv.splice(2));
+scriptive.command();
+// process.argv.splice(2),__dirname

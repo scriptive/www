@@ -2,7 +2,7 @@
 test/
 secure/
 ssl/
-app/
+# app/
 *.bat
 *-lock.json
 

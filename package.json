@@ -10,6 +10,7 @@
     "forever": "forever start forever.json",
     "pm2": "pm2 start pm2.json",
     "myordbok": "node run myordbok",
+    "zaideih": "node run zaideih",
     "testdb": "node test/serve_mongodb"
   },
   "repository": {
@@ -29,6 +30,5 @@
   "dependencies": {
     "@scriptive/evh": "file:../evh"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
