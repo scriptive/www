@@ -4,5 +4,6 @@
 .gitattributes export-ignore
 .gitignore export-ignore
 
+/www.code-workspace
 /test/ export-ignore
 *.md export-ignore

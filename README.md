@@ -94,3 +94,30 @@ $ rsync -avP media storage/media/
     └── *
 └── two
     └── *
+
+
+## Preparing
+
+- [x] mysql
+  - [ ] connection (local)
+- [ ] node package
+- [ ] storage API
+  - [ ] connection (local)
+- [ ] storage API
+
+sudo apt-get install wget
+
+wget https://github.com/scriptive/www/tarball/master
+curl -O https://github.com/scriptive/www/tarball/master
+
+
+curl -O https://github.com/scriptive/www/archive/master.tar.gz
+wget https://github.com/scriptive/www/archive/master.tar.gz
+tar -tf master.tar.gz
+
+tar -zcvf master.tar.gz /var/path-?
+
+tar -zxvf master.tar.gz
+tar -xvf master.tar.gz
+npm i @scriptive/evh
+rsync -avP www-master/ /var/www/scriptive
