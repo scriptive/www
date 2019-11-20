@@ -77,3 +77,14 @@ FLUSH PRIVILIGES;
 UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root' AND Host = '%';
 
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+```
+
+```sql
+mysql -u root
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('search');
+UPDATE mysql.user SET plugin = '' WHERE user = 'root' AND host = 'localhost';
+FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'root'@'localhost';
+```

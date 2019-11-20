@@ -31,5 +31,8 @@
   },
   "devDependencies": {
     "@scriptive/evh": "file:../evh"
+  },
+  "tmp": {
+    "@scriptive/evh": "file:../evh"
   }
 }
