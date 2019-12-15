@@ -29,12 +29,26 @@ chown -R $USER:$USER /var/path-?
 ```shell
 wget https://raw.githubusercontent.com/?/?
 wget https://github.com/name/rep/archive/master.tar.gz
+
+cd /var/www/scriptive
+wget https://github.com/name/rep/archive/master.tar.gz
+tar xf master.tar.gz --strip-components=1
+
+cd /var/www/myordbok
+wget https://github.com/name/rep/archive/master.tar.gz
+tar xf master.tar.gz --strip-components=1
+
+cd /var/www/zaideih
+wget https://github.com/name/rep/archive/master.tar.gz
+tar xf master.tar.gz --strip-components=1
 ```
 
 ... sync
 
 ```shell
 rsync -avP /var/path-src?/ /var/path-tar?
+rsync -avP /var/www/storage/media/ /var/www/media
+rsync -avP /var/www/media/ /var/www/storage/media
 ```
 
 ... archive

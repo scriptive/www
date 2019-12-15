@@ -32,6 +32,13 @@ sudo mysql -u root -p
 ```sql
 CREATE DATABASE myordbok;
 CREATE DATABASE zaideih;
+
+-- database character set and collation
+ALTER DATABASE myordbok CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER DATABASE zaideih CHARACTER SET utf8 COLLATE utf8_general_ci;
+-- table character set and collation
+ALTER TABLE tablename CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 ```
 
 ...show database

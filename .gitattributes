@@ -5,7 +5,7 @@
 .gitignore export-ignore
 
 /.vscode  export-ignore
-/www.code-workspace/  export-ignore
+/www.code-workspace  export-ignore
 /package.json export-ignore
 /test/ export-ignore
 *.md export-ignore

@@ -1,5 +1,5 @@
 {
   "verbose": true,
   "ignore": ["*.scss","*.css","*.v[0-9].*"],
-  "watch": ["../zaideih/*","../test-myordbok/*","../test-zaideih/*","../test-default/*"]
+  "watch": ["../zaideih/*","../myordbok/*","../test-zaideih/*","../test-default/*"]
 }

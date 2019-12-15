@@ -16,6 +16,7 @@ $ gcsfuse bucket storage/
 $ fusermount -u /path/to
 ...
 $ gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
+$ gcsfuse -o rw --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
 ...
 $ fusermount -u /var/www/storage
 ```
@@ -27,4 +28,13 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 sudo apt-get update
 sudo apt-get install gcsfuse
+```
+
+## Credentials
+
+```shell
+nano ~/.profile
+nano /etc/profile
+export GOOGLE_APPLICATION_CREDENTIALS="/home/<username>/gsaks.json"
+echo $GOOGLE_APPLICATION_CREDENTIALS
 ```

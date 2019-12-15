@@ -78,9 +78,23 @@ sudo certbot renew --manual
 
 # certbot certonly --server https://acme-v02.api.letsencrypt.org/directory --manual --preferred-challenges dns -d 'lethil.me,*.lethil.me,zotune.com,*.zotune.com'
 
-certbot certonly --server https://acme-v02.api.letsencrypt.org/directory -d "lethil.me,*.lethil.me,zotune.com,*.zotune.com" --manual --preferred-challenges dns-01
+certbot certonly --server --manual --preferred-challenges dns-01 https://acme-v02.api.letsencrypt.org/directory -d "lethil.me,*.lethil.me,zotune.com,*.zotune.com"
+certbot certonly --server https://acme-v02.api.letsencrypt.org/directory -d "lethil.me,*.lethil.me,myordbok.com,*.myordbok.com,zaideih.com,*.zaideih.com" --manual --preferred-challenges dns-01
+certbot certonly --cert-name lethil -d "*.lethil.me" -d "myordbok.com,*.myordbok.com,zaideih.com,*.zaideih.com" --manual --preferred-challenges dns-01
+certbot certonly --cert-name lethil -d "lethil.me,*.lethil.me,zaideih.com,*.zaideih.com,myordbok.com,*.myordbok.com" --manual --preferred-challenges dns-01
+certbot certonly --cert-name web -d "zaideih.com,*.zaideih.com,myordbok.com,*.myordbok.com" --manual --preferred-challenges dns-01
 
+certbot certonly --webroot --preferred-challenges dns-01 https://acme-v02.api.letsencrypt.org/directory -d "lethil.me,*.lethil.me,myordbok.com,*.myordbok.com,zaideih.com,*.zaideih.com"
 ```
+
+
+sudo certbot delete --cert-name example.com
+_acme-challenge
+
+-WTpnMkFbTSTP5TObGDvJ2Orl6ZGVEugc4Mm71_sxMo
+dWzNTvVuiB8V0BddtPmj9XjDlOsjFmYDW4JMY9iOI1s
+en_kls5Fj-NHxAnY5sdYO09KjOLxfCM4VBZEVJdwW-w
+
 
 ## testing http
 
