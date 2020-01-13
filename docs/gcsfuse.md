@@ -7,19 +7,21 @@ Mount with read/write permission using *service account keys*.
 > gsaks: **google service account keys**
 
 ```shell
-$ gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.json bucket /path/to
-...
-$ gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.p12 bucket /path/to
-...
-$ gcsfuse bucket storage/
-...
-$ fusermount -u /path/to
-...
-$ gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
-$ gcsfuse -o rw --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
-...
-$ fusermount -u /var/www/storage
+gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.json bucket /path/to
+
+gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.p12 bucket /path/to
+
+gcsfuse bucket storage/
+
+fusermount -u /path/to
+
+gcsfuse -o rw,allow_other --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
+gcsfuse -o rw --key-file=/home/<username>/gsaks.json storage.lethil.me /var/www/storage
+
+fusermount -u /var/www/storage
 ```
+
+## Installation
 
 ```shell
 export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
@@ -33,8 +35,9 @@ sudo apt-get install gcsfuse
 ## Credentials
 
 ```shell
-nano ~/.profile
+# nano ~/.profile
 nano /etc/profile
 export GOOGLE_APPLICATION_CREDENTIALS="/home/<username>/gsaks.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/var/www/media/gsaks.json"
 echo $GOOGLE_APPLICATION_CREDENTIALS
 ```

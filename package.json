@@ -10,8 +10,7 @@
     "url": "git+https://github.com/scriptive/evh.git"
   },
   "keywords": [
-    "framework",
-    "vhost"
+    "framework"
   ],
   "author": "Khen Solomon Lethil",
   "license": "MIT",
