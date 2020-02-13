@@ -94,3 +94,21 @@ total= awk ' {rows++; sum += $2} END{print sum - 277}' app.ip.log && echo $total
 total = awk ' {rows++; sum += $2} END{print sum}' app.ip.log && echo $sum
 # user= awk '{rows++;} END{print rows}' && total= awk '{sum += $2} END{print sum}' app.ip.log && echo $user
 fileIP = 'app.ip.log' && awk '{user++; total += $2} END {print user, total}' echo $fileIP > app.t1.log
+
+
+
+
+awk '$11 ~ /http:\/\/www.google.com\/search?/ { print substr($11,26) ;}'
+
+awk '{print $7}' access.myordbok/log.log
+awk '$7 ~ /\/definition?/ { printf "%s\n",substr($7,3+index($7,"?")) ;}' access.myordbok/log.log
+awk '$7 ~ /\/definition?/ { printf "%s\n",substr($7,14) ;}' access.myordbok/log.log
+awk '$7 ~ /?/ { printf "%s\n",$7;}' access.myordbok/log.log
+
+
+awk '{split($7,a,/[=&]/); print a[2]}' access.myordbok/log.log | sort | uniq -c | sort -rn
+
+
+awk '/definition\?q=/{gsub(";.*","",$7);print $7}' access.myordbok/log.log
+
+awk '$7 ~ /\/definition\?q=/ { printf "%s\n",substr($7,15) ;}' access.myordbok/log.log | sort | uniq -c | sort -rn

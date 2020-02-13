@@ -43,3 +43,6 @@ additional | description
 
 curl -L https://github.com/scriptive/zaideih/archive/master.tar.gz | tar zx --strip-components=1
 curl -L https://github.com/scriptive/myordbok/archive/master.tar.gz | tar zx --strip-components=1
+
+
+tar cvzf download.gz access.myordbok.log.*.gz
