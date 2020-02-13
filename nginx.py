@@ -16,10 +16,10 @@ class logParser(object):
     # self.taskType = taskType
 
 
-    # self.log_dir_nginx = "/var/log/nginx"
-    # self.log_dir_media = "/var/www/media/log"
-    self.log_dir_nginx = "/server/nginx/logs"
-    self.log_dir_media = "/storage/media/log"
+    self.log_dir_nginx = "/var/log/nginx"
+    self.log_dir_media = "/var/www/media/log"
+    # self.log_dir_nginx = "/server/nginx/logs"
+    # self.log_dir_media = "/storage/media/log"
 
     # self.ACCESSFile = "access.app.log"
     self.NOTEFile = "app.task.log"
