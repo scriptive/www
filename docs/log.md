@@ -51,3 +51,6 @@ myordbok:visit
 
 zaideih:visit
 1576839650850,993835240704
+
+https://linuxconfig.org/how-to-change-default-python-version-on-debian-9-stretch-linux
+update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2

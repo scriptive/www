@@ -18,6 +18,15 @@
     },
     {
       "path": "C:\\server\\nginx\\logs"
+    },
+    {
+      "path": "C:\\storage\\media\\grammar"
+    },
+    {
+      "path": "..\\nginx"
+    },
+    {
+      "path": "..\\webpack-test"
     }
   ],
 	"settings": {

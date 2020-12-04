@@ -46,3 +46,6 @@ curl -L https://github.com/scriptive/myordbok/archive/master.tar.gz | tar zx --s
 
 
 tar cvzf download.gz access.myordbok.log.*.gz
+
+
+curl -L https://github.com/scriptive/www/archive/master.tar.gz | tar zx --strip-components=1

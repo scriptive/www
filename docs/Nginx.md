@@ -22,14 +22,19 @@ nginx -s reload
 
 nginx -s reopen
 # ... re-opening log files
+```
 
-# reload
-sudo systemctl reload nginx
+### Restart
 
-# restart
+```shell
 sudo systemctl restart nginx
 sudo service nginx restart
+```
 
+### Reload
+
+```shell
+sudo systemctl reload nginx
 ```
 
 ## Installation

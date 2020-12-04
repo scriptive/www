@@ -14,7 +14,6 @@ sudo mysql_secure_installation
 systemctl restart mariadb
 ```
 
-
 ## remote2SQL
 
 ```sql
@@ -42,4 +41,15 @@ SHOW GRANTS FOR 'root'@'localhost';
 USE mysql;
 UPDATE user SET password=PASSWORD('') WHERE User='root' AND Host = 'localhost';
 FLUSH PRIVILEGES;
+```
+
+... export CSV
+
+```sql
+SELECT *
+FROM senses
+INTO OUTFILE '/tmp/csv/sense.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
 ```

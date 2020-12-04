@@ -20,3 +20,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt-get install nodejs
 node -v
 npm -v
+
+## NPM
+
+npm outdated
