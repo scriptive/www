@@ -10,5 +10,17 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}\\serve.js"
     }
+  ],
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "watch",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem"
+      }
+    }
   ]
 }

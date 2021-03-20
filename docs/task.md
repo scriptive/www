@@ -28,6 +28,9 @@ rsync -avP /var/www/media/glossary/zero.*.csv /var/www/storage/media/glossary
 # update grammar
 rsync -avP /var/www/storage/media/grammar/ /var/www/media/grammar
 
+# update store
+rsync -avP /var/www/storage/media/store/ /var/www/media/store
+
 # backup fonts-JSON
 rsync -avP /var/www/media/fonts/*.json /var/www/storage/media/fonts
 rsync -avP fonts/*.json test
